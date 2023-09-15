@@ -1,6 +1,6 @@
 import { getWalkers } from "./database.js"
 
-const walkers = getWalker()
+const walkers = getWalkers() // Missing as "s" imported function
 
 
 export const CityList = () => {

@@ -1,4 +1,4 @@
-import { getWalker } from "./database.js"
+import { getWalkers } from "./database.js" // Missing a "s" should be getWalkers
 
 const walkers = getWalkers()
 
