@@ -1,14 +1,15 @@
-import { getWalkers } from "./database.js"
+// UPDATED import { getWalkers } from "./database.js" to NEW OBJECT Cities
+import { getCities } from "./database.js"
 
-const walkers = getWalkers() // Missing as "s" imported function
-
+// UPDATED const walkers = getWalkers() 
+const cities = getCities()
 
 export const CityList = () => {
     let citiesHTML = "<ol>"
     
-    // changed walker to currentWalker
-    for (const currentWalker of walkers) {
-        citiesHTML += `<li>${currentWalker.city}</li>`
+    // UPDATED 
+    for (const currentCity of cities) {
+        citiesHTML += `<li>${currentCity.city}</li>`
     }
 
     citiesHTML += "</ol>"
