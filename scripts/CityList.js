@@ -9,7 +9,7 @@ export const CityList = () => {
     
     // UPDATED 
     for (const currentCity of cities) {
-        citiesHTML += `<li>${currentCity.city}</li>`
+        citiesHTML += `<li>${currentCity.name}</li>`
     }
 
     citiesHTML += "</ol>"
